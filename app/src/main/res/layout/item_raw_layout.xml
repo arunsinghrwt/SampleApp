@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/new33"
+        app:shapeAppearance="@style/ShapeAppearance.App.CircleImageView"/>
+
+<TextView
+    android:layout_below="@+id/imageView"
+    android:layout_width="wrap_content"
+    android:textSize="12dp"
+    android:padding="5dp"
+    android:layout_centerHorizontal="true"
+    android:text="Women"
+    android:layout_height="wrap_content">
+
+</TextView>
+
+
+
+</RelativeLayout>

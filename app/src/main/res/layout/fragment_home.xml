@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Ui.fragment.HomeFragment">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/appbar">
+
+    </include>
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/white"
+            android:id="@+id/itemLayout"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id = "@+id/ListRecyclerView"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+                android:orientation = "horizontal"
+                android:paddingTop = "10dp"
+                android:paddingBottom="5dp"
+                app:layoutManager = "androidx.recyclerview.widget.LinearLayoutManager"
+                />
+        </LinearLayout>
+
+
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_below="@+id/itemLayout"
+      android:orientation = "vertical"
+      android:scrollbars = "none"
+
+        android:layout_height="match_parent">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <ImageView
+              android:id="@+id/image_new"
+              android:layout_width="match_parent"
+              android:background="@color/grey_color"
+              android:layout_height="15dp">
+
+          </ImageView>
+          <LinearLayout
+              android:id="@+id/pager_view"
+android:layout_below="@id/image_new"
+              android:layout_width = "match_parent"
+              android:layout_height = "250dp"
+              >
+
+              <RelativeLayout
+                  android:layout_width = "wrap_content"
+                  android:background="@color/white"
+                  android:paddingBottom="15dp"
+                  android:layout_height = "match_parent"
+                  >
+                  <androidx.viewpager.widget.ViewPager
+                      android:id = "@+id/sliderViewPager"
+                      android:layout_width = "match_parent"
+                      android:layout_height = "match_parent"
+                      android:layout_marginBottom = "15dp"
+                      >
+                  </androidx.viewpager.widget.ViewPager>
+
+                  <com.rd.PageIndicatorView
+                      android:id = "@+id/pageIndicatorView"
+                      android:layout_width = "wrap_content"
+                      android:layout_height = "wrap_content"
+                      android:layout_alignParentBottom = "true"
+                      android:layout_centerHorizontal = "true"
+                      app:piv_animationType = "worm"
+                      app:piv_dynamicCount = "true"
+                      app:piv_interactiveAnimation = "true"
+                      app:piv_padding = "8dp"
+                      app:piv_radius = "2dp"
+                      app:piv_selectedColor = "@color/purple_500"
+                      app:piv_unselectedColor = "@color/grey_color"
+                      app:piv_viewPager = "@id/sliderViewPager"
+                      />
+
+                  <ImageView
+                      android:layout_width="match_parent"
+                      android:scaleType="fitXY"
+                      android:visibility="gone"
+                    android:layout_marginTop="30dp"
+                      android:layout_marginBottom="30dp"
+                      android:layout_height="match_parent"
+                      android:src="@drawable/ban1" />
+
+              </RelativeLayout>
+          </LinearLayout>
+          <ImageView
+              android:id="@+id/new_line"
+              android:layout_width="match_parent"
+              android:layout_below="@+id/pager_view"
+              android:background="@color/grey_color"
+              android:layout_height="12dp">
+
+          </ImageView>
+          <LinearLayout
+              android:id="@+id/upper_layout"
+              android:layout_below="@+id/new_line"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:paddingTop="12dp"
+              android:orientation="horizontal"
+              android:layout_height="170dp">
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:src="@drawable/new2"
+                  android:layout_weight="1"
+                  android:scaleType="fitXY"
+                  android:layout_height="wrap_content">
+              </ImageView>
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_marginLeft="12dp"
+                  android:layout_weight="1"
+                  android:scaleType="fitXY"
+                  android:src="@drawable/new1"
+                  android:layout_height="wrap_content">
+              </ImageView>
+
+
+          </LinearLayout>
+
+
+
+
+
+          <LinearLayout
+              android:layout_below="@+id/upper_layout"
+              android:layout_width="match_parent"
+              android:background="@color/white"
+              android:paddingTop="12dp"
+
+              android:paddingBottom="12dp"
+              android:orientation="horizontal"
+              android:layout_height="170dp">
+
+
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:src="@drawable/new4"
+                  android:layout_weight="1"
+
+                  android:scaleType="fitXY"
+                  android:layout_height="wrap_content">
+              </ImageView>
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_marginLeft="12dp"
+                  android:layout_weight="1"
+                  android:scaleType="fitXY"
+                  android:src="@drawable/new7"
+                  android:layout_height="wrap_content">
+              </ImageView>
+
+
+          </LinearLayout>
+
+
+
+
+      </RelativeLayout>
+
+
+
+
+
+
+
+  </ScrollView>
+
+
+
+
+</RelativeLayout>

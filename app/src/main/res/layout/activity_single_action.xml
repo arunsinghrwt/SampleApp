@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ui.SingleActionActivity">
+
+    <ImageView
+        android:id="@+id/inner_image"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ban1"
+        android:scaleType="fitXY"
+        android:layout_height="250dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/title_image"
+        android:layout_width="match_parent"
+        android:padding="12dp"
+
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:padding="12dp"
+
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:padding="12dp"
+
+        android:textSize="14sp"
+        android:textColor="@color/purple_500"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</LinearLayout>

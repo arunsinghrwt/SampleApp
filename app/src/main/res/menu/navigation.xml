@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/stdio"
+        android:icon="@drawable/ic_baseline_apps_24"
+
+        android:title="Categories"
+
+        tools:ignore="MenuTitle" />
+    <item
+        android:id="@+id/explore"
+        android:title="Explore"
+        android:icon="@drawable/ic_baseline_explore_24"
+        tools:ignore="MenuTitle" />
+
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/pro"
+        tools:ignore="MenuTitle" />
+
+</menu>
